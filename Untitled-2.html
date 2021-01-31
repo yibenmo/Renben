@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 500px;
+            width: 300px;
+            background-color: aqua;
+        }
+        .box-inner1,.box-inner2{
+            height: 150px;
+            margin-bottom: 100px;
+            background-color: greenyellow;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box" id="box">
+        <div class="box-inner1" id="bi1"></div>
+        <div class="box-inner2" id="bi2"></div>
+    </div>
+    <script>
+        var box = document.getElementById("box");
+        var bi1 = document.getElementById("bi1");
+        var bi2 = document.getElementById("bi2");
+        box.addEventListener("mouseover",function(){
+            console.log("box");
+        })
+        // bi1.addEventListener("mouseover",function(){
+        //     console.log("bi1");
+        // })
+        // bi2.addEventListener("mouseover",function(){
+        //     console.log("bi2");
+        // })
+    </script>
+</body>
+</html>
